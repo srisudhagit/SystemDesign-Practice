@@ -2,7 +2,6 @@ package com.systemdesign.lld.SimpleFactoryPattern;
 
 public class SimpleFactory {
     // creating objects is moved to factory class
-    // 
     public void sendNotification(String type) {
         if (type.equalsIgnoreCase("EMAIL")) {
             EmailNotification emailNotification = new EmailNotification();

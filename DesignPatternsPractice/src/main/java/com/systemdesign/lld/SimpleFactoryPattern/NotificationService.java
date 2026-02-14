@@ -1,6 +1,7 @@
 package com.systemdesign.lld.SimpleFactoryPattern;
 
 // Creation of Service is decoupled from its usage
+// client doesn't focus on creating instance. It just passes the details and factory takes care of creating instances according to required type.
 public class NotificationService {
     private SimpleFactory simpleFactory;
 

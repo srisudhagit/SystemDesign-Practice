@@ -9,12 +9,12 @@ import com.systemdesign.lld.DecoratorPattern.HouseBlend;
 import com.systemdesign.lld.DecoratorPattern.Mocha;
 import com.systemdesign.lld.DecoratorPattern.Soy;
 import com.systemdesign.lld.DecoratorPattern.Whip;
-import com.systemdesign.lld.ObserverPattern.CurrentConditionsDisplay;
-import com.systemdesign.lld.ObserverPattern.WeatherData;
+import com.systemdesign.lld.ObserverPattern.WeatherExample.CurrentConditionsDisplay;
+import com.systemdesign.lld.ObserverPattern.WeatherExample.WeatherData;
 import com.systemdesign.lld.ParkingLotSystem.ParkingLot;
-import com.systemdesign.lld.StratergyPattern.Duck;
-import com.systemdesign.lld.StratergyPattern.FlyRocketedBehavior;
-import com.systemdesign.lld.StratergyPattern.ModelDuck;
+import com.systemdesign.lld.StratergyPattern.BirdExample.Duck;
+import com.systemdesign.lld.StratergyPattern.BirdExample.FlyRocketedBehavior;
+import com.systemdesign.lld.StratergyPattern.BirdExample.ModelDuck;
 
 /**
  * Hello world!
