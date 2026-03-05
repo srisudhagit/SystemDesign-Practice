@@ -1,16 +1,16 @@
-package com.systemdesign.lld.ParkingLotSystem;
+package com.systemdesign.lldpractice.ParkingLotSystem;
 
 public class MotorCycle extends Vehicle {
 
     public MotorCycle(String licensePlate) {
-        super(licensePlate, VehicleType.MotorCycle);
+        super(licensePlate, VehicleSize.SMALL);
     }
 
     @Override
     public String toString() {
         return "MotorCycle{" +
                 "licensePlate='" + super.licensePlate + '\'' +
-                ", vehicleType=" + super.vehicleType +
+                ", vehicleSize=" + super.vehicleSize +
                 '}';
     }
     

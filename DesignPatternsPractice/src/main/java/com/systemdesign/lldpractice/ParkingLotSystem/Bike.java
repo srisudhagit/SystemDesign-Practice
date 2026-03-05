@@ -1,16 +1,17 @@
 package com.systemdesign.lldpractice.ParkingLotSystem;
 
-public class Truck extends Vehicle {
+public class Bike extends Vehicle {
 
-    public Truck(String licensePlate) {
-        super(licensePlate, VehicleSize.LARGE);
+    public Bike(String licensePlate) {
+        super(licensePlate, VehicleSize.SMALL);
     }
-    
+
     @Override
     public String toString() {
-        return "Truck{" +
+        return "Bike{" +
                 "licensePlate='" + super.licensePlate + '\'' +
                 ", vehicleSize=" + super.vehicleSize +
                 '}';
     }
+    
 }

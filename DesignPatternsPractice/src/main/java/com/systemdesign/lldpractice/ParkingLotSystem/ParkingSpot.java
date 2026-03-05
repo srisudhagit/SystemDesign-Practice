@@ -1,16 +1,16 @@
-package com.systemdesign.lld.ParkingLotSystem;
+package com.systemdesign.lldpractice.ParkingLotSystem;
 
 public class ParkingSpot {
-    private int id;
+    private String id;
     private Vehicle parkedVehicle;
-    private final VehicleType vehicleType;
+    private final VehicleSize spotSize;
 
-    public ParkingSpot(int id,VehicleType vehicleType) {
+    public ParkingSpot(String id,VehicleSize vehicleSize) {
         this.id = id;
-        this.vehicleType = vehicleType;
+        this.spotSize = vehicleSize;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -18,16 +18,20 @@ public class ParkingSpot {
         return parkedVehicle;
     }
 
-    public VehicleType getVehicleType() {
-        return vehicleType;
+    public VehicleSize getSpotSize() {
+        return spotSize;
     }   
 
     public synchronized boolean isAvailable() {
         return parkedVehicle == null;
+    }   
+
+    public boolean canFitVehicle(Vehicle vehicle) {
+        return isAvailable() && spotSize == vehicle.getVehicleSize();
     }
 
     public synchronized void parkVehicle(Vehicle vehicle) {
-        if (isAvailable() && vehicle.getVehicleType() == vehicleType) {
+        if (canFitVehicle(vehicle)) {
             this.parkedVehicle = vehicle;
         } else {
             throw new IllegalStateException("Parking spot is not available or vehicle type does not match.");               

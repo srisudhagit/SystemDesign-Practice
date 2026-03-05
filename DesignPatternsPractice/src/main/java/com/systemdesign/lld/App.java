@@ -68,10 +68,10 @@ public class App
             case 3:
                 //test Parking Lot
                 ParkingLot parkingLot = ParkingLot.getInstance();
-                Level level1 = new Level(1, 20);
+                ParkingLevel level1 = new ParkingLevel(1, 20);
                 
-                parkingLot.addLevel(new Level(1, 20));
-                parkingLot.addLevel(new Level(2, 20));
+                parkingLot.addLevel(new ParkingLevel(1, 20));
+                parkingLot.addLevel(new ParkingLevel(2, 20));
 
             // parkingLot.parkVehicle(new Car("ABC123", "Car"));
             

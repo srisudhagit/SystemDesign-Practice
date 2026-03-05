@@ -1,16 +1,16 @@
-package com.systemdesign.lld.ParkingLotSystem;
+package com.systemdesign.lldpractice.ParkingLotSystem;
 
 public class Car extends Vehicle {
 
     public Car(String licensePlate) {
-        super(licensePlate, VehicleType.Car);
+        super(licensePlate, VehicleSize.MEDIUM);
     }
 
     @Override
     public String toString() {
         return "Car{" +
                 "licensePlate='" + super.licensePlate + '\'' +
-                ", vehicleType=" + super.vehicleType +
+                ", vehicleSize=" + super.vehicleSize +
                 '}';
     }
     
